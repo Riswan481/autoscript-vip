@@ -19,7 +19,7 @@ author=$(cat /etc/profil)
 
 # Fungsi utama
 check_license() {
-    local data_ip="https://raw.githubusercontent.com/king-vpn/permission/main/ip"
+    local data_ip="https://raw.githubusercontent.com/Riswan481/permission/main/ip"
     local exp_date=$(curl -sS $data_ip | grep $MYIP | awk '{print $3}')
     local server_date=$(date +%Y-%m-%d)
     
