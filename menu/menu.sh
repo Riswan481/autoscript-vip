@@ -30,7 +30,7 @@ check_license() {
         echo -e "$COLOR1│${NC}${COLBG1} ${WH}• AUTOSCRIPT PREMIUM •${NC}                          $COLOR1│"
         echo -e "$COLOR1│${RED}           PERMISSION DENIED !${NC}                    │"
         echo -e "$COLOR1│   ${yl}IP:${NC} $MYIP \033[0;36mTelah Diblokir${NC}             │"
-        echo -e "$COLOR1│        ${yl}Hubungi Admin untuk Akses${NC}              │"
+        echo -e "$COLOR1│        ${yl}Hubungi 085888801241${NC}              │"
         echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
         exit 1
     fi
