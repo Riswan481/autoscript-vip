@@ -5,7 +5,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ipsaya=$(wget -qO- ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/king-vpn/permission/main/ip"
+data_ip="https://raw.githubusercontent.com/Riswan481/permission/main/ip"
 checking_sc() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
   if [[ $date_list < $useexp ]]; then
@@ -50,7 +50,7 @@ BGX="\033[42m"
 END='\e[0m'
 AKTIF="VERIFIED"
 TOKEN=$(cat /etc/github/api)
-REPO="https://github.com/king-vpn/permission.git"
+REPO="https://github.com/Riswan481/permission.git"
 EMAIL=$(cat /etc/github/email)
 USER="king-vpn"
 
@@ -115,7 +115,7 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
     git add . &> /dev/null
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/king-vpn/permission
+    git remote add origin https://github.com/Riswan481/permission
     git push -f https://${TOKEN}@github.com/king-vpn/permission.git &> /dev/null
     rm -rf /root/ipvps
     clear
@@ -191,7 +191,7 @@ TIMES="10"
     git add . &> /dev/null
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/king-vpn/permission
+    git remote add origin https://github.com/Riswan481/permission
     git push -f https://${TOKEN}@github.com/king-vpn/permission.git &> /dev/null
     rm -rf /root/ipvps
     clear
@@ -251,8 +251,8 @@ TIMES="10"
     git add . &> /dev/null
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/king-vpn/permission
-    git push -f https://${TOKEN}@github.com/king-vpn/permission.git &> /dev/null
+    git remote add origin https://github.com/Riswan481/permission
+    git push -f https://${TOKEN}@github.com/Riswan481/permission.git &> /dev/null
     rm -rf /root/ipvps
     clear
     sleep 1
